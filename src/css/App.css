@@ -149,8 +149,8 @@
   font-size: calc(9px + 0.3vmin);
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-sort p {

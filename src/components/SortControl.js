@@ -7,7 +7,7 @@ export const SortControl = ({ sortOptions, sortBy, setSortBy }) => {
 
   return (
     <div className="App-sort">
-      <p>Sort Stations:</p>
+      <p>Sort Stations</p>
       <ul>
         {sortOptions.map((option) => (
           <li
