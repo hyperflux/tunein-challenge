@@ -1,0 +1,203 @@
+.App {
+  text-align: center;
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Noto Sans";
+  font-size: calc(10px + 1vmin);
+  color: 000;
+}
+
+.App-logo {
+  height: 20vw;
+  max-height: 10vh;
+  pointer-events: none;
+  margin: 0;
+  padding: 0;
+}
+
+.App-header {
+  background-color: #2161d0;
+  height: 20vh;
+  max-height: 40vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-link {
+  color: #2161d0;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.App-h {
+  font-family: "Antonio";
+  font-size: calc(20px + 1vmin);
+  margin: 0 0 30px 0;
+}
+
+.App-text-sm {
+  font-size: calc(9px + 0.5vmin);
+}
+
+.App-text-error {
+  color: #e47272;
+}
+
+.App-station-list {
+  width: 90vw;
+  max-width: 1000px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.App-station-list li {
+  margin: 0;
+  padding-left: 0.8vmin;
+  padding-right: 0.8vmin;
+  padding-bottom: 0.8vmin;
+  display: flex;
+  cursor: pointer;
+}
+
+.App-station-list img {
+  padding: 10px;
+  border: 6px solid transparent;
+  border-radius: 10px;
+  width: 145px;
+  height: 145px;
+  transition: transform 0.25s ease;
+}
+
+.App-station-list img:hover {
+  transform: scale(1.05);
+}
+
+.App-station-list .App-station-img-selected {
+  border-color: #2161d0;
+}
+
+.App-player {
+  width: 70vw;
+  max-width: 1000px;
+  background-color: #2161d0;
+  padding: calc(20px + 0.5vmin);
+  padding-left: calc(40px + 0.5vmin);
+  padding-right: calc(40px + 0.5vmin);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.App-tag-list {
+  width: 90vw;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.App-tag {
+  font-family: "Antonio";
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 2px 10px 5px;
+  color: #fff;
+  font-size: calc(14px + 0.4vmin);
+  margin: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.App-tag:hover {
+  background-color: rgb(139, 139, 139);
+}
+
+.App-tag-selected,
+.App-tag-selected:hover {
+  background-color: #6595e9;
+}
+
+.App-btn-clear {
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(139, 139, 139);
+  color: #fff;
+  padding: 4px 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.App-sort {
+  font-size: calc(9px + 0.3vmin);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.App-sort p {
+  margin: 0 0 5px;
+}
+
+.App-sort ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.App-sort li {
+  text-transform: uppercase;
+  padding-left: 10px;
+  background: #ccc;
+  border-radius: 10px;
+  padding: 3px 6px;
+  color: #fff;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.App-sort li.App-sort-selected,
+.App-sort li.App-sort-selected:hover {
+  background: #6595e9;
+}
+
+.App-sort li:hover {
+  background-color: rgb(139, 139, 139);
+}
+
+.App-trans-opac {
+  transition: opacity 0.5s ease;
+}
+
+.App-opac-0 {
+  opacity: 0;
+}
+
+.App-opac-1 {
+  opacity: 1;
+}
+
+button:focus,
+audio:focus {
+  outline: none;
+}

@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+
+import "./css/App.css";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import { Header } from "./components/Header";
+import { StationSelector } from "./components/StationSelector";
+import { StationPlayer } from "./components/StationPlayer";
+import { Spacer } from "./components/Spacer";
 
 function App() {
+  const [station, setStation] = useState();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Spacer h={40} />
+      <StationSelector station={station} setStation={setStation} />
+      <Spacer h={40} />
+      <StationPlayer station={station} />
+      <Spacer h={100} />
     </div>
   );
 }
